@@ -4,7 +4,7 @@
     <!-- Test Gita -->
     <meta charset="utf-8" />
     <title>Clever Template</title>
-    <html lang="PL">
+    <html lang="PL" />
     <meta
       name="description"
       content="Przykładowy szablon strony www, sprawdź pozostałe szablony!"
@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css?family=Monda|Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -30,6 +31,7 @@
     />
 
     <link rel="stylesheet" href="style/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
       rel="stylesheet"
@@ -71,158 +73,196 @@
       </div>
     </nav>
 
-    <section>
-      <div id="home" class="container col-12">
-        <div class="hello">
-          <div class="welcometext">
-            <p class="bigger-text">Next Gen Software is now availiable</p>
-            <p class="smaler-text">Fill the form and have a good day</p>
-            <div class="welcomebuttons mt-2">
-              <a class="btn-hello btn-first mx-3" href="#anchorpoint">Odkryj</a>
-              <a class="btn-hello btn-second" href="#kontakt">Kontakt</a>
+    <header class="">
+      <div id="hero" class="hero-wrapper">
+        <div class="column col-12 col-xl-6 text-header">
+          <div>
+            <h1 class="mb-5">
+              Rozwiążemy twój  <span class="text-acccent">problem IT </span>jeśli: <br />
+            </h1>
+            <div class="my-5">
+              <span class="your-problems">
+              </span>
             </div>
-          </div>
 
+          </div>
+        </div>
+        <div class="column col-12 col-xl-6  form-header">
           <div class="hello-form">
+            <h3 class="mb-4 text-acccent font-weight-bold">Umów darmową konsultację</h3>
+
             <form class="text-left">
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email address</label
-                >
+              <div class="mb-4">
+                <input
+                  class="form-control long-input"
+  
+                  placeholder="Opisz krótko swój problem"
+                ></input>
+              </div>
+              <div class="mb-4">
                 <input
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
+                  placeholder="Zostaw adres email"
                   aria-describedby="emailHelp"
                 />
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >What is the problem ?</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
-              <div class="mb-3 form-check">
+
+              <div class="mb-4 form-check">
                 <input
                   type="checkbox"
                   class="form-check-input"
                   id="exampleCheck1"
                 />
-                <label class="form-check-label" for="exampleCheck1"
-                  >Agreed with
+                <label class="form-check-label" for="exampleCheck1">
+                  Wyrażam zgodę na przetwarzanie moich danych osobowych podanych
+                  w powyższym formularzu w celach kontaktowych
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Umów konsultację</button>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
     <main>
       <section>
-        <div id="hero" class="hero-wrapper">
-          <div class="column text-header">
-            <div>
-              <h3>WE SOLVED MANY PROBLEMS</h3>
-              <h1 class="mb-5">
-                We are <br />Software <span class="text-acccent">House</span>
-              </h1>
-              <div class="separator"></div>
-              <div class="my-5">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Totam perferendis quis maiores praesentium quibusdam fugiat,
-                  excepturi delectus possimus, placeat magni hic neque, at
-                  debitis? Porro eum nobis quia itaque rem tempore, dignissimos
-                  vel dolore totam.
-                </p>
-              </div>
-
-              <div class="sh-btn mb-5"><a href="#offerta"> Read More</a></div>
-            </div>
-          </div>
-          <div class="column sery img-header">
-            <img src="./images/coop.png" alt="" />
-          </div>
-        </div>
-
         <div class="container conwithstat col-12">
           <div class="container conwithstat col-12">
-            
-            <div class="poly"></div>
-    
+            <div class="col-10 mx-auto text-center mb-6rem">
+              <h1>W jaki sposób SHX pomoże  <span class="text-acccent">osiągnąć sukces</span> twojej organizacji?</h1>
+
+            </div>
             <div class="row strongsites col-11 col-lg-10 mx-auto">
-              <div class="ss col-12 col-lg-6 col-xl-3 py-2">
+
+              <div class="ss col-12 col-lg-6 col-xl-4 py-2 ">
                 <div class="box">
-                  <h5><b>Web develop</b></h5>
+                  <h5><b>Apliacje webowe</b></h5>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Autem, dolorem voluptatem ullam laboriosam quaerat eius
                     natus amet eveniet a velit expedita alias quod sint
                     accusantium enim voluptates perspiciatis accusamus impedit!
                   </p>
-				  <div class="box-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-					  </svg>
-
-				  </div>
-			
+      
                 </div>
               </div>
-              <div class="ss col-12 col-lg-6 col-xl-3 py-2">
+              <div class="ss col-12 col-lg-6 col-xl-4 py-2">
                 <div class="box">
-                  <h5><b>Konsultacje</b></h5>
+                  <h5><b>Apliacje mobilne</b></h5>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Autem, dolorem voluptatem ullam laboriosam quaerat eius
                     natus amet eveniet a velit expedita alias quod sint
                     accusantium enim voluptates perspiciatis accusamus impedit!
                   </p>
-				  <div class="box-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
-						<path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-					  </svg>
-
-				  </div>
+                  <div class="box-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-lightbulb"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
-              <div class="ss col-12 col-xl-3 py-2">
+              <div class="ss col-12 col-lg-6 col-xl-4  py-2">
                 <div class="box">
-                  <h5><b>System wsparcia</b></h5>
+                  <h5><b>
+                    Migracje i integracje
+                  </b></h5>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Autem, dolorem voluptatem ullam laboriosam quaerat eius
                     natus amet eveniet a velit expedita alias quod sint
                     accusantium enim voluptates perspiciatis accusamus impedit!
                   </p>
-				    <div class="box-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-							<path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
-						  </svg>
-				  </div>
+                  <div class="box-icon">
+            
+                  </div>
                 </div>
               </div>
-              <div class="ss col-12 col-xl-3 py-2">
+              <div class="ss col-12 col-lg-6 col-xl-4  py-2">
                 <div class="box">
-                  <h5><b>Marchwa services</b></h5>
+                  <h5><b>Modernizacja i utrzymanie</b></h5>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Autem, dolorem voluptatem ullam laboriosam quaerat eius
                     natus amet eveniet a velit expedita alias quod sint
                     accusantium enim voluptates perspiciatis accusamus impedit!
                   </p>
-				    <div class="box-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-							<path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
-						  </svg>
-
-				  </div>
+                  <div class="box-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-send"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="ss col-12 col-lg-6 col-xl-4  py-2">
+                <div class="box">
+                  <h5><b>Product desing</b></h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Autem, dolorem voluptatem ullam laboriosam quaerat eius
+                    natus amet eveniet a velit expedita alias quod sint
+                    accusantium enim voluptates perspiciatis accusamus impedit!
+                  </p>
+                  <div class="box-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-send"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="ss col-12 col-lg-6 col-xl-4  py-2">
+                <div class="box">
+                  <h5><b>Audyty i consulting</b></h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Autem, dolorem voluptatem ullam laboriosam quaerat eius
+                    natus amet eveniet a velit expedita alias quod sint
+                    accusantium enim voluptates perspiciatis accusamus impedit!
+                  </p>
+                  <div class="box-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-send"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
               <div class="row statistics my-4 col-xl-8 mx-auto">
@@ -430,6 +470,18 @@
       </div>
     </section>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".your-problems",{
+        
+        strings:['','Obecne rozwiązanie IT nie spełnia Twoich oczekiwań ^1000','Szukasz nowego rozwiązania IT szytego na miare ^1000',' Chcesz przenieść swój biznes do chmury ^1000 ','Tworzysz startup technologiczny ^1000'],
+        typeSpeed:20,
+        backSpeed:10,
+        loop:true
+      })
+    </script>
     <!-- Animacje-->
     <script src="js/animations.js"></script>
 
@@ -440,3 +492,4 @@
     <script src="js/loading.js"></script>
   </body>
 </html>
+
