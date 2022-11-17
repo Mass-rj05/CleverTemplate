@@ -77,10 +77,18 @@ ul {
   /* color: white !important; */
 }
 .bg-dart.scrolled {
-  /* background-color: black !important; */
   box-shadow: 0px 0px 20px rgb(181, 184, 184);
-  opacity: 0;
+
+
+}
+nav{
+  opacity: 1;
+}
+.hide{
+    opacity: 0;
   pointer-events: none;
+  transform: translateY(-100%);
+
 }
 .nav_links.scrolled {
   color: White !important;
