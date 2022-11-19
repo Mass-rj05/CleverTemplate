@@ -1,8 +1,8 @@
 const animations = () => {
-ScrollReveal().reveal('.hello-form', { duration:1500,
-    origin: 'right',
-    distance:'200px'
-    });
+// ScrollReveal().reveal('.hello-form', { duration:1500,
+//     origin: 'right',
+//     distance:'200px'
+//     });
 ScrollReveal().reveal('#oferta', { duration:1500,
     origin: 'top',
     distance:'200px'
@@ -62,15 +62,15 @@ ScrollReveal().reveal('#oferta', { duration:1500,
     delay:700
     });
     
-    ScrollReveal().reveal('.form-group', { duration:1500,
-    origin: 'left',
-    distance:'200px',
-    delay:700
-    });
+    // ScrollReveal().reveal('.form-group', { duration:1500,
+    // origin: 'left',
+    // distance:'200px',
+    // delay:700
+    // });
     
-    ScrollReveal().reveal('.upbutton a', { duration:1500,
-    origin: 'right',
-    distance:'200px'
-    });
+    // ScrollReveal().reveal('.upbutton a', { duration:1500,
+    // origin: 'right',
+    // distance:'200px'
+    // });
 }
 animations();

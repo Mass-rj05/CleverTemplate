@@ -62,6 +62,7 @@ ul {
 }
 .nav_links li {
   list-style-type: none;
+  margin-right: 2rem;
 }
 .nav_links a {
   color: black;
@@ -71,7 +72,7 @@ ul {
   font-size: 14px;
 }
 .nav_links a:hover {
-	color: #00cbdb;
+  color: #00cbdb;
 }
 .bg-dart {
   transition: 750ms ease;
@@ -82,11 +83,11 @@ ul {
 .bg-dart.scrolled {
   box-shadow: 0px 0px 20px rgb(181, 184, 184);
 }
-nav{
+nav {
   opacity: 1;
 }
-.hide{
-    opacity: 0;
+.hide {
+  opacity: 0;
   pointer-events: none;
   transform: translateY(-100%);
 }
@@ -115,19 +116,17 @@ nav{
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
-  .nav_links {
-    width: 40%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
+
+  .h-100px {
+    height: 100px;
+  }
   .nav_links {
     margin: 0px;
-    position:relative;
+    position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
@@ -135,14 +134,15 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     z-index: 1;
     transition: 750ms ease;
+    margin-right: 0px;
   }
   .nav_links.scrolled {
-    background-color: black;
+    /* background-color: black; */
   }
   .nav_links li {
     opacity: 0;
@@ -150,14 +150,11 @@ nav{
   .burger {
     display: block;
   }
-  .burger div.scrolled {
-    background-color: white;
-  }
 }
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(150px);
     /* transform: translateY(50px); */
   }
   to {
@@ -274,6 +271,7 @@ nav{
 .conwithstat {
   background-color: white;
   color: black;
+  margin-bottom: 6rem;
 }
 .statistics {
   display: flex;
@@ -381,13 +379,32 @@ img {
   color: white;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .hero-wrapper {
     flex-direction: row;
   }
   .text-header {
     width: 50%;
   }
+  .toggle-content {
+    max-width: 650px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .img-wrapper img {
+    height: 550px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .img-wrapper {
+    padding: 0;
+  }
+  #methods .row {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 960px) {
   .img-header {
     width: 50%;
   }
@@ -697,7 +714,7 @@ header {
   box-shadow: 0px 2px 10px #005d6a33;
   margin-bottom: 6rem;
 }
-.mb-6rem{
+.mb-6rem {
   margin-bottom: 8rem;
 }
 
