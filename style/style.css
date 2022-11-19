@@ -110,6 +110,10 @@ nav{
   margin: 5px;
   transition: all 0.3s ease;
 }
+.burger {
+  display: none;
+  cursor: pointer;
+}
 
 @media screen and (min-width: 480px) {
   .nav_links {
