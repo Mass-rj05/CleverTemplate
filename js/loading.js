@@ -1,11 +1,9 @@
 const loading = () => {
-	$(window).on('load', function() {
-		setTimeout(
-			function() {
-				$("#loader-wrapper").fadeOut();
-			});
-		
-	});
-	}
+  $(window).on("load", function () {
+    setTimeout(function () {
+      $("#loader-wrapper").fadeOut();
+    });
+  });
+};
 
-	loading();
+loading();
