@@ -742,3 +742,6 @@ header {
   color: var(--accent);
   letter-spacing: 5px;
 }
+.h-86px{
+  height: 86px;
+}
