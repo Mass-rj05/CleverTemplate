@@ -737,3 +737,8 @@ header {
   font-size: 1.7rem;
   color: var(--accent);
 }
+
+.shx-text{
+  color: var(--accent);
+  letter-spacing: 5px;
+}
